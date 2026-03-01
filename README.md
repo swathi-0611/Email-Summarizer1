@@ -1,42 +1,30 @@
-📧 Email Intelligence Summarizer
-An automated AI agent that monitors your inbox and transforms long, cluttered emails into concise, actionable summaries using Large Language Models (LLMs).
+# 📧 Email-Summarizer AI Agent
 
-🚀 Overview
-Managing a high volume of emails leads to "inbox fatigue." This project automates the extraction and summarization process, allowing users to understand the core of a message and its Action Items in seconds without opening the full thread.
+An intelligent automation agent that monitors your inbox and transforms cluttered email threads into concise, actionable summaries using Large Language Models (LLMs).
 
-✨ Key Features
-Automated Fetching: Connects to any IMAP-enabled provider (Gmail, Outlook) to pull unread messages.
+## 🚀 The Problem
+Modern professionals receive dozens of emails daily, leading to "inbox fatigue." Most of these messages contain "fluff" like signatures, legal disclaimers, and thread history that make it difficult to find the core message.
 
-Smart Cleaning: Automatically removes signatures, HTML tags, and legal disclaimers before processing.
+## ✨ Key Features
+* **Automated Triage:** Connects to any IMAP-enabled provider to pull unread messages automatically.
+* **Smart Parsing:** Strips HTML, CSS, and email signatures to feed only relevant text to the AI.
+* **Abstractive Summarization:** Uses Gemini/GPT to generate a 3-bullet-point summary of the message.
+* **Task Identification:** Automatically identifies "Action Items" (e.g., deadlines, meeting requests).
+* **Low-Code Logic:** Built with a modular `.json` workflow architecture for easy deployment.
 
-AI Summarization: Uses Gemini/GPT-4 to generate 3-5 bullet point summaries.
+## 🛠️ Tech Stack
+* **Core:** Python, JSON
+* **AI Engine:** Google Gemini 1.5 Flash / OpenAI GPT-4
+* **Automation:** Integration-ready workflow (Merge/n8n)
+* **Protocols:** IMAP / SMTP for secure mailbox access
 
-Task Extraction: Specifically identifies "Action Items" (e.g., "Meeting at 2 PM", "Send the report").
+## 📂 Project Structure
+* `Email Summarizer Using Merge.json`: The core logic and API integration mapping.
+* `README.md`: Project documentation and setup guide.
+* `Preview.png`: Visual demonstration of the summary output.
 
-Low-Code Architecture: Built using a modular .json workflow for easy deployment and scaling.
-
-🛠️ Tech Stack
-Language: Python
-
-AI Model: Google Gemini 1.5 Flash (or OpenAI GPT-4o)
-
-Workflow: JSON-based Automation Logic
-
-Protocols: IMAP / SMTP for secure email access
-
-📂 Repository Structure
-Email Summarizer Using Merge.json: The core logic and workflow configuration.
-
-README.md: Project documentation.
-
-Screenshot...: Visual preview of the summarizer in action.
-
-⚙️ Setup & Installation
-Clone the Repo: git clone https://github.com/swathi-0611/Email-Summarizer1
-
-API Keys: Obtain an API key from Google AI Studio or OpenAI.
-
-App Password: If using Gmail, generate an App Password (do not use your regular password).
-
-Import Workflow: Import the .json file into your preferred automation tool (Merge.dev/n8n).
-
+## ⚙️ Setup Instructions
+1. **Clone:** `git clone https://github.com/swathi-0611/Email-Summarizer1`
+2. **Configure:** Add your AI API Key to the environment variables.
+3. **Connect:** Use an "App Password" (for Gmail) to authenticate the IMAP node.
+4. **Run:** Import the JSON workflow into your automation tool or run the Python wrapper.
