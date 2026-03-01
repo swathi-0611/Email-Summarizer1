@@ -40,11 +40,3 @@ App Password: If using Gmail, generate an App Password (do not use your regular 
 
 Import Workflow: Import the .json file into your preferred automation tool (Merge.dev/n8n).
 
-💡 Pro-Tip for your GitHub
-To make this project look "Senior" level, add a "Future Enhancements" section to your README:
-
-Add Sentiment Analysis to flag urgent/angry emails.
-
-Integration with Slack/Discord for summary notifications.
-
-Calendar auto-scheduling for detected meeting requests.
